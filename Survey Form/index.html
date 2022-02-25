@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Lord of The Rings Form</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Lord of The Rings</h1>
+        <p id="description">L.O.T.R form to see fan opinions and stats</p>
+    </header>
+    <section>
+        <form id="survey-form">
+            <ul id="form-list">
+                <li>
+                    <label for="name" id="name-label">Name: </label>
+                    <input type="text" placeholder="Your favorite character's name" name="name" id="name" required>
+                </li>
+                <li>
+                    <label for="email" id="email-label">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Your email for results" required>
+                </li>
+                <li>
+                    <label for="number" id="number-label">Age: </label>
+                    <input type="number" name="age" id="number" min="13" max="120" placeholder="How old are you?">
+                </li>
+                <li>
+                    <label for="dropdown">Which is you favorite book: </label>
+                    <select name="fav-book" id="dropdown">
+                        <option value="the-hobbit" selected>The Hobbit</option>
+                        <option value="the-fellowship-of-the-ring">The Fellowship of The Ring</option>
+                        <option value="the-two-towers">The Two Towers</option>
+                        <option value="the-return-of-the-king">The Return of The King</option>
+                    </select>
+                </li>
+                <li>
+                    <div id="title">Rate the series:</div>
+                    <div id="radio-items">
+                        <input type="radio" name="rate" id="bad-series" value="Bad Series">
+                        <label id="radio-label" for="bad-series">Not a good series 😡</label>
+                    </div>
+                    <div id="radio-items">
+                        <input type="radio" name="rate" id="eh" value="Eh">
+                        <label id="radio-label" for="eh">I've seen better 😐</label>
+                    </div>
+                    <div id="radio-items">
+                        <input type="radio" name="rate" id="amazing" value="Amazing">
+                        <label id="radio-label" for="amazing">Amazing series 🤩</label>
+                    </div>
+                    <!-- <div class="form-group">
+                        <p>Would you recommend freeCodeCamp to a friend?</p>
+                        <label>
+                            <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                                checked />Definitely</label>
+                        <label>
+                            <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+
+                        <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not
+                            sure</label>
+                    </div>
+ -->
+                </li>
+            </ul>
+        </form>
+    </section>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+        const projectName = "survey-form"
+    </script>
+</body>
+
+</html>
