@@ -17,6 +17,7 @@
         <h1 id="title">Lord of The Rings</h1>
         <p id="description">L.O.T.R form to see fan opinions and stats</p>
     </header>
+    <div id="spacer"></div>
     <section>
         <form id="survey-form">
             <ul id="form-list">
@@ -42,38 +43,63 @@
                     </select>
                 </li>
                 <li>
-                    <div id="title">Rate the series:</div>
-                    <div id="radio-items">
+                    <label>Rate the series:</label>
+                    <div id="check-items">
                         <input type="radio" name="rate" id="bad-series" value="Bad Series">
-                        <label id="radio-label" for="bad-series">Not a good series 😡</label>
+                        <label id="check-label" for="bad-series">Not a good series 😡</label>
                     </div>
-                    <div id="radio-items">
+                    <div id="check-items">
                         <input type="radio" name="rate" id="eh" value="Eh">
-                        <label id="radio-label" for="eh">I've seen better 😐</label>
+                        <label id="check-label" for="eh">I've seen better 😐</label>
                     </div>
-                    <div id="radio-items">
+                    <div id="check-items">
                         <input type="radio" name="rate" id="amazing" value="Amazing">
-                        <label id="radio-label" for="amazing">Amazing series 🤩</label>
+                        <label id="check-label" for="amazing">Amazing series 🤩</label>
                     </div>
-                    <!-- <div class="form-group">
-                        <p>Would you recommend freeCodeCamp to a friend?</p>
-                        <label>
-                            <input name="user-recommend" value="definitely" type="radio" class="input-radio"
-                                checked />Definitely</label>
-                        <label>
-                            <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
-
-                        <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not
-                            sure</label>
-                    </div>
- -->
                 </li>
+                <li>
+                    <label>Other books you've read?</label>
+                    <div id="description">* Select all that apply</div>
+                    <div id="check-items">
+                        <input type="checkbox" value="The-Adventures-of-Tom-Bombadil"
+                            name="The Adventures of Tom Bombadil" id="The-Adventures-of-Tom-Bombadil">
+                        <label id="check-label" for="The-Adventures-of-Tom-Bombadil">The Adventures of Tom
+                            Bombadil</label>
+                    </div>
+                    <div id="check-items">
+                        <input type="checkbox" value="The-Silmarillion" name="The Silmarillion" id="The-Silmarillion">
+                        <label id="check-label" for="The-Silmarillion">The Silmarillion</label>
+                    </div>
+                    <div id="check-items">
+                        <input type="checkbox" value="The-Children-of-Húrin" name="The Children of Húrin"
+                            id="The-Children-of-Húrin">
+                        <label id="check-label" for="The-Children-of-Húrin">The Children of Húrin</label>
+                    </div>
+                    <div id="check-items">
+                        <input type="checkbox" value="The-Fall-of-Gondolin" name="The Fall of Gondolin"
+                            id="The-Fall-of-Gondolin">
+                        <label id="check-label" for="The-Fall-of-Gondolin">The Fall of Gondolin</label>
+                    </div>
+                    <div id="check-items">
+                        <input type="checkbox" value="The-Book-of-Lost-Tales" name="The Book of Lost Tales"
+                            id="The-Book-of-Lost-Tales">
+                        <label id="check-label" for="The-Book-of-Lost-Tales">The Book of Lost Tales</label>
+                    </div>
+                    <div id="check-items">
+                        <label id="check-label" for="Other">Other:</label>
+                        <input type="text" name="Other-book" id="Other" placeholder="Please specify">
+                    </div>
+                </li>
+                <li>
+                    <label for="movie_vs_book">What could they have done<br>better in the movie?</label>
+                    <textarea id="movie_vs_book" rows="2" style="max-width: 80%;"
+                        placeholder="They could've changed..."></textarea>
+                </li>
+                <button type="submit" id="submit">Submit Form</button>
             </ul>
         </form>
     </section>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
-        const projectName = "survey-form"
-    </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
